@@ -1,0 +1,13 @@
+
+.todo{
+    display:flex;
+    flex-direction: column-reverse
+}
+.todo div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.todo div label{
+    margin-left: 10px;
+}

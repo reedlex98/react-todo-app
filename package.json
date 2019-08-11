@@ -1,7 +1,7 @@
 {
-  "name": "basics",
+  "name": "react-todo-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "it's an app that I made following scrimba react course lessons",
   "main": "index.js",
   "babel":{
     "presets" : [
