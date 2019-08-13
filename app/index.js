@@ -32,6 +32,11 @@ Eventually we'll want to be able to modify the data, which will only happen if w
 Challenge: Change the <App /> component into a stateful class component and load the imported `todosData` into state.
 */
 
+/**
+ * PHASE 5
+ * Challenge: Get rid of our warning about not having an onChange on our input. For now, the function that runs onChange can simply console.log something.
+ */
+
 
 import React from 'react'
 import ReactDOM from 'react-dom'
