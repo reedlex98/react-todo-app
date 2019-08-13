@@ -1,11 +1,12 @@
 import React from 'react'
 
-const handleChange = () => alert('hey, I was changed')
+        // Update state so that the item with the given id flips `completed` from false to true (or vise versa)
+        // Remember not to modify prevState directly, but instead to return a new version of state with the change you want included in that update. (Think how you might use the `.map` method to do this)
 
 const TodoItem = (props) => {
     return (
         <div className="todo-item">
-            <input onChange={handleChange}type="checkbox" name="task" defaultChecked={props.completed} disabled={props.completed}/>
+            <input onChange={props.app.handleChange.bind(props.app, props.id)} type="checkbox" name="task" defaultChecked={props.completed}/>
             <label htmlFor="task" style={{textDecoration: props.completed ? 'line-through' : 'none'}}>{props.text}</label>
         </div>
     )   
