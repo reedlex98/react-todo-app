@@ -24,8 +24,8 @@ class App extends React.Component{
     }
 
     render(){   
-        const TodoItems = this.state.data.map(todoData => <TodoItem app={this} id={todoData.id} key={todoData.id} text={todoData.text} completed={todoData.completed}/>)
-        
+        const TodoItems = this.state.data.map(todoData => <TodoItem handleChange={this.handleChange} id={todoData.id} key={todoData.id} text={todoData.text} completed={todoData.completed}/>)
+
         return (
             <div className="todo">
                 {TodoItems}

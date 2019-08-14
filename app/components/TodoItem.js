@@ -6,7 +6,7 @@ import React from 'react'
 const TodoItem = (props) => {
     return (
         <div className="todo-item">
-            <input onChange={props.app.handleChange.bind(props.app, props.id)} type="checkbox" name="task" defaultChecked={props.completed}/>
+            <input onChange={ () => props.handleChange(props.id) } type="checkbox" name="task" defaultChecked={props.completed}/>
             <label htmlFor="task" style={{textDecoration: props.completed ? 'line-through' : 'none'}}>{props.text}</label>
         </div>
     )   
