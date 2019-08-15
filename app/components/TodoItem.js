@@ -5,8 +5,8 @@ import React from 'react'
 
 const TodoItem = (props) => {
     return (
-        <div className="todo-item">
-            <input onChange={props.handleChange} type="checkbox" name="task" defaultChecked={props.completed}/>
+        <div onClick={props.handleChange} className={`todo-item ${props.completed ? 'completed' : 'not-completed'}`}>
+            <input onChange={props.handleChange} type="checkbox" name="task" checked={props.completed}/>
             <label htmlFor="task" style={{textDecoration: props.completed ? 'line-through' : 'none'}}>{props.text}</label>
         </div>
     )   
